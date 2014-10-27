@@ -14,6 +14,7 @@ var noteOffset = letterFontSize/2;
 var buttonPressColor = 235;
 var shade1 = false;
 var shade2 = false; // for shading in arrow buttons
+var backgroundColor = 255;
 
 var buttonSize = 50;
 var windowWidth = 600;
@@ -26,7 +27,7 @@ var windowHeight = 600;
   var y2 = y1;
 
 function setup(){
-  background(255);
+  background(backgroundColor);
   createCanvas(600,600);
   rectMode(CENTER);
 }
@@ -71,8 +72,8 @@ function mouseReleased(){
 function accidentals(){
   
   //clear part of canvas to redraw
-  stroke(255);
-  fill(255);
+  stroke(backgroundColor);
+  fill(backgroundColor);
   rectMode(CORNERS);
   rect(width - x1 - buttonSize - 20, 0, width - x1 + 20, y1);
   
@@ -89,6 +90,7 @@ function accidentals(){
   }
   
   fill(0);
+  noStroke();
   textAlign(CENTER);
   textFont("Palatino Linotype");
   textSize(40);
@@ -107,8 +109,8 @@ function speedButtons(){
     color2 = buttonPressColor;
   
   //clear part of canvas to redraw
-  stroke(255);
-  fill(255);
+  stroke(backgroundColor);
+  fill(backgroundColor);
   rectMode(CORNERS);
   rect(0,0,x2 + buttonSize, y2 + buttonSize);
 
@@ -138,6 +140,7 @@ function speedButtons(){
   
 
   fill(0);
+  noStroke();
   textFont("Palatino Linotype");
   textSize(40);
   textAlign(CENTER);
@@ -177,50 +180,50 @@ function drawLetter(){ //the main functionality of the program, switching and di
     
     allowSwitch = false;
     textFont("Times New Roman"); textSize(letterFontSize);
-    stroke(0);
+    noStroke();
     fill(0);
     
     switch (randomNumber){
            
       case 0:
-        background(255);
+        background(backgroundColor);
         text("C",width/2 - noteOffset,height/2 + 150);
       break;
       
 
       case 1:
-      background(255);
+      background(backgroundColor);
         text("D",width/2 - noteOffset,height/2 + 150);
       break;
      
       
       case 2:
-      background(255);
+      background(backgroundColor);
         text("E",width/2 - noteOffset,height/2 + 150);
       break;
       
       case 3:
-      background(255);
+      background(backgroundColor);
         text("F",width/2 - noteOffset,height/2 + 150);
       break;
       
       case 4:
-      background(255);
+      background(backgroundColor);
         text("G",width/2 - noteOffset,height/2 + 150);
       break;
       
       case 5:
-      background(255);
+      background(backgroundColor);
         text("A",width/2 - noteOffset,height/2 + 150);
       break;
       
       case 6:
-      background(255);
+      background(backgroundColor);
         text("B",width/2 - noteOffset,height/2 + 150);
       break;
 
       case 7:
-      background(255);
+      background(backgroundColor);
         var randomBool = Math.floor(random(2));
         if (randomBool == 1){
           textFont("Times New Roman"); textSize(letterFontSize);
@@ -237,7 +240,7 @@ function drawLetter(){ //the main functionality of the program, switching and di
       break;
 
       case 8:
-      background(255);
+      background(backgroundColor);
       var randomBool2 = Math.floor(random(2));
         if (randomBool2 == 1){
           textFont("Times New Roman"); textSize(letterFontSize);
@@ -253,7 +256,7 @@ function drawLetter(){ //the main functionality of the program, switching and di
         break; 
       
       case 9:
-      background(255);
+      background(backgroundColor);
       var randomBool3 = Math.floor(random(2));
         if (randomBool3 == 1){
           textFont("Times New Roman"); textSize(letterFontSize);
@@ -269,7 +272,7 @@ function drawLetter(){ //the main functionality of the program, switching and di
       break;     
       
       case 10:
-      background(255);
+      background(backgroundColor);
         var randomBool4 = Math.floor(random(2));
         if (randomBool4 == 1){
           textFont("Times New Roman"); textSize(letterFontSize);
@@ -285,7 +288,7 @@ function drawLetter(){ //the main functionality of the program, switching and di
       break;   
       
       case 11:
-      background(255);
+      background(backgroundColor);
         var randomBool5 = Math.floor(random(2));
         if (randomBool5 == 1){
           textFont("Times New Roman"); textSize(letterFontSize);
