@@ -168,9 +168,9 @@ function drawLetter(){ //the main functionality of the program, switching and di
     
     do{
         if (accidentals)
-          randomNumber = (var(random(12)));
+          randomNumber = (Math.floor(random(12)));
         else
-          randomNumber = (var(random(7)));
+          randomNumber = (Math.floor(random(7)));
     }while (randomNumber == pRandomNumber);
     
     pRandomNumber = randomNumber;
