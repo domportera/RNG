@@ -2,7 +2,7 @@
 
 var allowSwitch = false;
 var allowIncrement = false;
-var accidentals = true;
+var allowAccidentals = true;
 var incrementTimer = 30;
 var counterValue = 240;
 var counter = 0;
@@ -54,10 +54,10 @@ function mousePressed(){ // for interacting with GUI
   
   //accidental button
   if (mouseX > width - x1 - buttonSize && mouseX < width - x1 && mouseY > y1 && mouseY < y1 + buttonSize){
-    if (accidentals)
-      accidentals = false;
+    if (allowAccidentals)
+      allowAccidentals = false;
     else
-      accidentals = true;
+      allowAccidentals = true;
   }
   
 }
@@ -81,7 +81,7 @@ function accidentals(){
   rectMode(CORNER);
   rect(width - x1 - buttonSize, y1, buttonSize, buttonSize);
   
-  if (accidentals){
+  if (allowAccidentals){
     stroke(20,160,20);
     line(width - x1 - buttonSize, y1, width - x1, y1 + buttonSize);
     line(width - x1, y1, width - x1 - buttonSize, y1 + buttonSize);
@@ -167,7 +167,7 @@ function programBasics(){ // allowing the program to run
 function drawLetter(){ //the main functionality of the program, switching and displaying letters
     
     do{
-        if (accidentals)
+        if (allowAccidentals)
           randomNumber = (Math.floor(random(12)));
         else
           randomNumber = (Math.floor(random(7)));
