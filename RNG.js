@@ -27,7 +27,7 @@ var windowHeight = 600;
 
 function setup(){
   background(255);
-  size(600,600);
+  createCanvas(600,600);
   rectMode(CENTER);
 }
 
