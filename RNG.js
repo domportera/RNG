@@ -221,7 +221,7 @@ function drawLetter(){ //the main functionality of the program, switching and di
 
       case 7:
       background(255);
-        var randomBool = var(random(2));
+        var randomBool = Math.floor(random(2));
         if (randomBool == 1){
           textFont("Times New Roman"); textSize(letterFontSize);
           text("C",width/2 - noteOffset,height/2 + 150);
@@ -238,7 +238,7 @@ function drawLetter(){ //the main functionality of the program, switching and di
 
       case 8:
       background(255);
-      var randomBool2 = var(random(2));
+      var randomBool2 = Math.floor(random(2));
         if (randomBool2 == 1){
           textFont("Times New Roman"); textSize(letterFontSize);
           text("D",width/2 - noteOffset,height/2 + 150);
@@ -254,7 +254,7 @@ function drawLetter(){ //the main functionality of the program, switching and di
       
       case 9:
       background(255);
-      var randomBool3 = var(random(2));
+      var randomBool3 = Math.floor(random(2));
         if (randomBool3 == 1){
           textFont("Times New Roman"); textSize(letterFontSize);
           text("F",width/2 - noteOffset,height/2 + 150);
@@ -270,7 +270,7 @@ function drawLetter(){ //the main functionality of the program, switching and di
       
       case 10:
       background(255);
-        var randomBool4 = var(random(2));
+        var randomBool4 = Math.floor(random(2));
         if (randomBool4 == 1){
           textFont("Times New Roman"); textSize(letterFontSize);
           text("G",width/2 - noteOffset,height/2 + 150);
@@ -286,7 +286,7 @@ function drawLetter(){ //the main functionality of the program, switching and di
       
       case 11:
       background(255);
-        var randomBool5 = var(random(2));
+        var randomBool5 = Math.floor(random(2));
         if (randomBool5 == 1){
           textFont("Times New Roman"); textSize(letterFontSize);
           text("A",width/2 - noteOffset,height/2 + 150);
