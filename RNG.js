@@ -141,7 +141,7 @@ function speedButtons(){
   textFont("Palatino Linotype");
   textSize(40);
   textAlign(CENTER);
-  text((float)counterValue/60 + "s", (x1 + x2 + buttonSize)/2, y1 - 10);
+  text(counterValue/60 + "s", (x1 + x2 + buttonSize)/2, y1 - 10);
 }
 
 
